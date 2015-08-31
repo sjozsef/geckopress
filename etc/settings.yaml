@@ -13,20 +13,6 @@ analytics:
 	desc: 'Google Analytics követőkód.'
 	type: textarea-simple
 	rows: 4
-
-header-style:
-	id: gp-header-style
-	section: header
-	label: 'Header template'
-	desc: '<p>Please select a template for the heading!</p>'
-	type: 'select'
-	choices:
-		1:
-			value: 'nav-style-1'
-			label: 'Simple one-row branding & navigation'
-		2:
-			value: 'nav-style-2'
-			label: 'Two rows, branding and navigation separetly'
 			
 nav-social:
 	id: gp-nav-social

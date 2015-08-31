@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id=
         "gp-navbar-collapse-1">
             
-            <?php get_template_part('snippets/header/header-nav-primary'); ?>
+            <?php get_template_part('snippets/header/menu-primary'); ?>
             <?php get_template_part('snippets/header/header-search'); ?>
             
         </div><!-- /.navbar-collapse -->
