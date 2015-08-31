@@ -9,3 +9,7 @@ header:
 footer:
 	id: footer
 	title: Footer
+	
+install-plugins:
+	id: install-plugins
+	title: Install plugins

@@ -2,7 +2,15 @@ customcss:
 	id: gp-custom-css
 	section: general
 	label: 'Egyedi CSS'
-	desc: '<p>Egyedi CSS kód, amely a &lt;head&gt; szekcióba kerül minden lapletöltéskor.</p>'
+	desc: '<p>Egyedi CSS kód, amely a <code>head</code> szekcióba kerül minden lapletöltéskor.</p>'
+	type: css 
+	rows: 8
+	
+customjs:
+	id: gp-custom-js
+	section: general
+	label: 'Egyedi Javascript'
+	desc: '<p>Egyedi Javascript kód, amely a <code>body</code> szekció legvégére kerül minden lapletöltéskor.</p>'
 	type: css 
 	rows: 8
 
@@ -41,4 +49,52 @@ nav-search:
 	label: 'Show search form in header'
 	desc: '<p>Enable or disable header search form</p>'
 	type: 'on-off'
-		
+	
+footer-text:
+	id: gp-footer-text
+	section: footer
+	label: 'Footer text'
+	desc: '<p>Set up your footer text like copyright stuff, some links, etc... HTML allowed!</p>'
+	type: 'textarea'
+
+slider-plugin:
+	id: gp-slider-plugin
+	section: install-plugins
+	label: 'Install a slider plugin'
+	desc: '<p>GeckoPress supports multiple slider plugins in order to allow you to select the best fitting one for your site.</p><p>MetaSlider is a lightweight slider plugin working with four slider scripts. Easy to use and optimized for speed and seo.<br />Revolution Slider is a heavy-weight, full-feutured slider scripts. It allows you to do anything with your slides, like frames, animations and a lot of cool stuff.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=ml-slider&TB_iframe=true&width=600&height=550">Install MetaSlider</a> <a class="button button-secondary" target="_blank" href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380">Buy RevSlider</a></p>'
+	type: 'textblock-titled'
+	
+contact-form-plugin:
+	id: gp-contact-form-plugin
+	section: install-plugins
+	label: 'Install Contact Form 7'
+	desc: '<p>Contact Form 7 is needed to display your contact forms. You can use any other contact form plugin, but GeckoPress has front-end codes only for CF7.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=contact-form-7&TB_iframe=true&width=772&height=865">Install Contact Form 7</a></p>'
+	type: 'textblock-titled'
+	
+page-builder-plugin:
+	id: gp-page-builder-plugin
+	section: install-plugins
+	label: 'Install PageBuilder by Siteorign'
+	desc: '<p>Page Builder by SiteOrigin makes it easy to build responsive grid-based page content that adapts to mobile devices with pixel perfect accuracy. It\'s a whole new dimension to content creation that\'ll help you create your home, contact, about us or any other page where a linear layout won’t convey your message. It\'s a powerful enhancement to the WordPress content editing experience, yet it feels entirely familiar.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=siteorigin-panels&TB_iframe=true&width=600&height=550">Install PageBuilder by Siteorigin</a></p>'
+	type: 'textblock-titled'
+	
+seo-plugin:
+	id: gp-seo-plugin
+	section: install-plugins
+	label: 'Install Yoast SEO'
+	desc: '<p>This plugin is written from the ground up by Joost de Valk and his team at Yoast to improve your site\'s SEO on all needed aspects. While this Yoast SEO plugin goes the extra mile to take care of all the technical optimization, more on that below, it first and foremost helps you write better content. Yoast SEO forces you to choose a focus keyword when you\'re writing your articles, and then makes sure you use that focus keyword everywhere.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordpress-seo&TB_iframe=true&width=772&height=865">Install Yoast SEO</a></p>'
+	type: 'textblock-titled'
+	
+cache-plugin:
+	id: gp-cache-plugin
+	section: install-plugins
+	label: 'Install W3 Total Cache'
+	desc: '<p>W3 Total Cache improves the user experience of your site by increasing server performance, reducing the download times and providing transparent content delivery network (CDN) integration.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=w3-total-cache&TB_iframe=true&width=600&height=550">Install W3 Total Cache</a></p>'
+	type: 'textblock-titled'
+	
+security-plugin:
+	id: gp-security-plugin
+	section: install-plugins
+	label: 'Install WordFence'
+	desc: '<p>The most downloaded WordPress security plugin. Wordfence starts by checking if your site is already infected. We do a deep server-side scan of your source code comparing it to the Official WordPress repository for core, themes and plugins. Then Wordfence secures your site and makes it up to 50 times faster.</p><p><a class="button button-primary thickbox" href="/wp-admin/plugin-install.php?tab=plugin-information&plugin=wordfence&TB_iframe=true&width=772&height=865">Install WordFence</a></p>'
+	type: 'textblock-titled'
