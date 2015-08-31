@@ -1,0 +1,16 @@
+0:
+    id: 'sidebar'
+    name: 'Sidebar'
+    description: 'A simple sidebar.'
+    before_widget: '<li id="%1$s" class="widget %2$s">'
+    after_widget: '</li>'
+    before_title: '<h2 class="widgettitle">'
+    after_title: '</h2>'
+1:
+    id: 'footer-widgets'
+    name: 'Footer Widgets'
+    description: 'Container of footer widgets at the bottom.'
+    before_widget: '<li id="%1$s" class="widget %2$s">'
+    after_widget: '</li>'
+    before_title: '<h2 class="widgettitle">'
+    after_title: '</h2>'

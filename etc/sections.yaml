@@ -1,0 +1,11 @@
+general:
+	id: general
+	title: General
+
+header:
+	id: header
+	title: Header
+
+footer:
+	id: footer
+	title: Footer
