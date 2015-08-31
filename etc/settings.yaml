@@ -50,6 +50,13 @@ nav-search:
 	desc: '<p>Enable or disable header search form</p>'
 	type: 'on-off'
 	
+home-slider:
+	id: gp-home-slider
+	section: header
+	label: 'Homepage slider'
+	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
+	type: 'text'
+	
 footer-text:
 	id: gp-footer-text
 	section: footer
