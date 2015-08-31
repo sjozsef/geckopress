@@ -5,7 +5,7 @@
 function gp_register_scripts()
 {
     wp_register_script('bootstrap', 
-        get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js',
+        get_template_directory_uri() . '/assets/js/bootstrap.min.js',
         array('jquery'),
         '',
         true);

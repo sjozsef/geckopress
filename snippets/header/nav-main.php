@@ -14,7 +14,9 @@
         "gp-navbar-collapse-1">
             
             <?php get_template_part('snippets/header/menu-primary'); ?>
-            <?php get_template_part('snippets/header/header-search'); ?>
+            <?php if(ot_get_option('gp-nav-search', 'off') == 'on') : ?>
+                <?php get_template_part('snippets/header/header-search'); ?>
+            <?php endif; ?>
             
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
