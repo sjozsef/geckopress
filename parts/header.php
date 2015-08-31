@@ -1,3 +1,3 @@
 <?php
-get_template_part('snippets/header/nav-main');
+get_template_part('snippets/header/header-navigation');
 ?>

@@ -1,0 +1,11 @@
+.navbar-brand.navbar-brand-image
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand.navbar-brand-image img 
+{
+    max-height: 100%;
+    width: auto;
+}

@@ -13,6 +13,20 @@ analytics:
 	desc: 'Google Analytics követőkód.'
 	type: textarea-simple
 	rows: 4
+	
+logo:
+	id: gp-logo
+	section: header
+	label: 'Your site logo'
+	description: 'Upload a logo (png) or leave blank for text-based logo'
+	type: upload
+	
+nav-logo:
+	id: gp-hidden-nav-logo
+	section: header
+	label: 'Hide logo in the navbar'
+	desc: '<p>Enable this if you want to hide logo in the main navigation bar</p>'
+	type: 'on-off'
 			
 nav-social:
 	id: gp-nav-social
