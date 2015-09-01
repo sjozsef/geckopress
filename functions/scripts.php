@@ -13,7 +13,10 @@ function gp_register_scripts()
 
 function gp_enqueue_scripts()
 {
-    wp_enqueue_script('bootstrap');
+    if(!is_admin())
+    {
+        wp_enqueue_script('bootstrap');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'gp_register_scripts');
