@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php get_template_part('snippets/loops/archive-title'); ?>
+
 <div class="container">
     
     <div class="row">
@@ -12,7 +14,7 @@
         
                     <?php while(have_posts()) : the_post(); ?>
                     
-                        <?php get_template_part('snippets/loops/archive', 'blog'); ?>
+                        <?php get_template_part('snippets/loops/archive', 'search'); ?>
                     
                     <?php endwhile; ?>
                 

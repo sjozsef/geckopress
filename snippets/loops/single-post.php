@@ -8,7 +8,7 @@
 
 <?php get_template_part('snippets/loops/post-head-meta'); ?>
 
-<div id="post-content">
+<div class="post-content">
     <?php the_content(); ?>
 </div>
 
