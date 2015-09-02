@@ -42,3 +42,12 @@
 {
     margin-bottom: 0;
 }
+
+/* ======================================
+        Main content structure
+ ===================================== */
+ 
+#main-content-wrap
+{
+    margin: 20px;
+}
