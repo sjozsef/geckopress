@@ -70,7 +70,8 @@ img.alignnone,
 img.alignleft,
 img.aligncenter,
 img.alignright,
-.wp-caption
+.wp-caption,
+.post-thumbnail img
 {
 	max-width: 100%;
 	height: auto;
@@ -131,32 +132,3 @@ img.alignnone,
 		margin: 0 auto 12px auto;
 	}
 }
-
-/*
-#post-content img.alignleft,
-#post-content img.alignright
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#post-content img.alignleft 
-{
-    float: left;
-    margin-right: 10px;
-}
-
-#post-content img.alignright
-{
-    float: right;
-    margin-left: 10px;
-}
-
-#post-content img.aligncenter,
-#post-content img.alignnone
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-*/

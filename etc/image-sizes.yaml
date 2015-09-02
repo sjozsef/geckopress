@@ -1,0 +1,4 @@
+blog-thumbnail:
+    width: 625
+    height: 351
+    crop: true

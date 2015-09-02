@@ -7,5 +7,7 @@ require_once( TEMPLATEPATH . '/functions/styles.php' );
 require_once( TEMPLATEPATH . '/functions/options.php'); 
 require_once( TEMPLATEPATH . '/functions/nav-menus.php');
 require_once( TEMPLATEPATH . '/functions/sidebars.php');
+require_once( TEMPLATEPATH . '/functions/image-sizes.php');
+require_once( TEMPLATEPATH . '/functions/theme-supports.php');
 
 ?>
