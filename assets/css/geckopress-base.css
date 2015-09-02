@@ -51,3 +51,112 @@
 {
     margin: 20px;
 }
+
+/* ======================================
+        Post content images
+ ===================================== */
+
+#post-content h1,
+#post-content h2,
+#post-content h3,
+#post-content h4,
+#post-content h5,
+#post-content h6
+{
+    clear: both;
+}
+
+img.alignnone,
+img.alignleft,
+img.aligncenter,
+img.alignright,
+.wp-caption
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-caption img
+{
+	margin: 0 !important;
+	max-width: 100%;
+	height: 100%;
+}
+
+.wp-caption
+{
+	width: auto !important;
+	text-align: center;
+	background-color: #f5f5f5;
+    color: #777;
+}
+
+.wp-caption-text 
+{
+    padding: 8px 6px;
+    margin-bottom: 0;
+}
+
+img.alignleft,
+.wp-caption.alignleft
+{
+	float: left;
+	margin: 0 12px 12px 0;
+}
+
+img.alignright,
+.wp-caption.alignright
+{
+	float: right;
+	margin: 0 0 12px 12px;
+}
+
+img.aligncenter,
+img.alignnone,
+.wp-caption.aligncenter,
+.wp-caption.alignnone
+{
+	display: block;
+	margin: 0 auto 12px auto;
+}
+
+@media only screen and (max-width: 780px) {
+	img.alignleft,
+	img.alignright,
+	.wp-caption.alignright,
+	.wp-caption.alignleft
+	{
+		float: none;
+		display: block;
+		margin: 0 auto 12px auto;
+	}
+}
+
+/*
+#post-content img.alignleft,
+#post-content img.alignright
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#post-content img.alignleft 
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#post-content img.alignright
+{
+    float: right;
+    margin-left: 10px;
+}
+
+#post-content img.aligncenter,
+#post-content img.alignnone
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+*/
