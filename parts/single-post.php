@@ -6,6 +6,10 @@
 
 <h1><?php the_title(); ?></h1>
 
+<?php get_template_part('snippets/loops/post-head-meta'); ?>
+
 <div id="post-content">
     <?php the_content(); ?>
 </div>
+
+<?php get_template_part('snippets/loops/post-foot-meta'); ?>
