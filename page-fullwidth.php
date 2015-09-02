@@ -14,7 +14,7 @@ Template name: Page (fullwidth)
 
             <?php while(have_posts()) : the_post(); ?>
             
-                <?php get_template_part('parts/single', 'page'); ?>
+                <?php get_template_part('snippets/loops/single', 'page'); ?>
             
             <?php endwhile; ?>
         

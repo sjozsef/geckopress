@@ -21,5 +21,5 @@
 </head>
 <body <?php body_class( $class ); ?>>
     <div id="main">
-        <?php get_template_part('parts/header'); ?>
+        <?php get_template_part('snippets/header/header'); ?>
         
