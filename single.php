@@ -6,7 +6,7 @@
         
         <div class="col-md-8">
             
-            <div class="main-content">
+            <div id="main-content-wrap">
             
                 <?php if(have_posts()) : ?>
         
@@ -24,7 +24,7 @@
         
         <div class="col-md-4">
             
-            <div class="sidebar">
+            <div id="sidebar-left" class="sidebar">
                 
                 <?php dynamic_sidebar('sidebar'); ?>
                 

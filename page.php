@@ -24,7 +24,7 @@
         
         <div class="col-md-4">
             
-            <div class="sidebar">
+            <div id = "sidebar-left" class="sidebar">
                 
                 <?php dynamic_sidebar('sidebar'); ?>
                 
