@@ -19,7 +19,7 @@
     ?>
     
 </head>
-<body <?php body_class( $class ); ?>>
+<body <?php body_class( ); ?>>
     <div id="main">
         <?php get_template_part('snippets/header/header'); ?>
         

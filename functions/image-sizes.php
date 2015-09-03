@@ -1,9 +1,6 @@
 <?php
 
-require_once(TEMPLATEPATH . '/functions/spyc.php');
-
-$img_sizes = SPYC::YAMLLoad(get_stylesheet_directory() . 
-    '/etc/image-sizes.yaml' );
+$img_sizes = gp_load_yaml( '/etc/image-sizes.yaml' );
 
 foreach($img_sizes as $name => $data)
 {

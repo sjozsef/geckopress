@@ -5,10 +5,9 @@
  * Registering nav menus by yaml
  */
 
-require_once(TEMPLATEPATH . '/functions/spyc.php');
 
-register_nav_menus( SPYC::YAMLLoad(get_stylesheet_directory() . 
-    '/etc/nav-menus.yaml' ));
+
+register_nav_menus( gp_load_yaml( '/etc/nav-menus.yaml' ));
 
 
 

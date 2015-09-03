@@ -7,7 +7,6 @@
 add_filter( 'ot_theme_mode', '__return_true' );
 add_filter( 'ot_show_pages', '__return_false');
 require_once( TEMPLATEPATH . '/option-tree/ot-loader.php' );
-require_once(TEMPLATEPATH . '/functions/spyc.php');
 
 add_action('admin_init', 'ph_theme_options');
 
@@ -26,8 +25,8 @@ function ph_theme_options()
 			),
 			'sidebar'	=>	'',
 			), //end of contextual_help
-		'sections'	=> Spyc::YAMLLoad(TEMPLATEPATH . '/etc/sections.yaml'), //TODO: Separated framework and child theme options
-		'settings'	=> Spyc::YAMLLoad(TEMPLATEPATH . '/etc/settings.yaml')
+		'sections'	=> gp_load_yaml('/etc/sections.yaml'), //TODO: Separated framework and child theme options
+		'settings'	=> gp_load_yaml( '/etc/settings.yaml')
 	); //end of $settings
 
 	$settings = apply_filters( ot_settings_id() . '_args', $settings );

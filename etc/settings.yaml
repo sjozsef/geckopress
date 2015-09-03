@@ -11,7 +11,7 @@ customjs:
 	section: general
 	label: 'Egyedi Javascript'
 	desc: '<p>Egyedi Javascript kód, amely a <code>body</code> szekció legvégére kerül minden lapletöltéskor.</p>'
-	type: css 
+	type: javascript 
 	rows: 8
 
 analytics:
