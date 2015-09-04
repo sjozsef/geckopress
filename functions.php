@@ -1,5 +1,3 @@
-<?php defined('ABSPATH') or die("Direct access not allowed."); ?>
-
 <?php
 
 require_once( TEMPLATEPATH . '/functions/spyc.php');
