@@ -1,7 +1,7 @@
 customcss:
 	id: gp-custom-css
 	section: general
-	label: 'Egyedi CSS'
+	label: 'Custom CSS'
 	desc: '<p>Egyedi CSS kód, amely a <code>head</code> szekcióba kerül minden lapletöltéskor.</p>'
 	type: css 
 	rows: 8

@@ -1,5 +1,3 @@
-<?php defined('ABSPATH') or die("Direct access not allowed."); ?>
-
 <?php
 
 function gp_register_scripts()
@@ -15,7 +13,7 @@ function gp_enqueue_scripts()
 {
     if(!is_admin())
     {
-        //wp_enqueue_script('bootstrap');
+        wp_enqueue_script('bootstrap');
     }
 }
 

@@ -1,5 +1,3 @@
-<?php defined('ABSPATH') or die("Direct access not allowed."); ?>
-
 <?php
 
 function gp_register_styles()
