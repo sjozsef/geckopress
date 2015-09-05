@@ -1,0 +1,26 @@
+# GeckoPress
+
+GeckoPress is a lightweight but feature rich WordPress theme framework. Basically
+it's a simple theme built on Bootstrap and optimized for child templates.
+
+## Key features
+
+The main goal is to provide a simple framework that implements everything you need 
+in a basic WordPress theme. You can use this theme as a boilerplate of your own theme.
+
+### YAML 
+
+We like YAML. GeckoPress use YAML files for defining sidebars and nav menus, 
+build option pages with OptionTree (built-in), enqueue scripts and styles. 
+
+### Built-In support for the best WordPress plugins
+
+* WooCommerce
+* PolyLang
+* MetaSlider and RevSlider
+* PageBuilder by Siteorigin
+* Contact Form 7
+
+### Optimized for child templates 
+
+In GeckoPress, ewery little thing has it's own file that you can override in your theme. 
