@@ -23,4 +23,4 @@ build option pages with OptionTree (built-in), enqueue scripts and styles.
 
 ### Optimized for child templates 
 
-In GeckoPress, ewery little thing has it's own file that you can override in your theme. 
+In GeckoPress, every little thing has it's own file that you can override in your theme. 
