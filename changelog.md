@@ -2,4 +2,4 @@
 
 ## 0.1
 
-- Initial release
+- Initial release (alpha1)

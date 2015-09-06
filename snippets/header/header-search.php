@@ -1,6 +1,6 @@
 <?php if(ot_get_option('gp-nav-search', 'off') == 'on' && 
     GPConfig::getInstance()->get_cfg('gp_allow_nav_search')) : ?>
-    <form class="navbar-form navbar-right" method="GET">
+    <form class="navbar-form navbar-right navbar-search" method="GET">
         <div class="form-group">
             <input name="s" class="form-control" placeholder="<?php _e('Search', geckopress); ?>" type="text">
         </div>

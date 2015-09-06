@@ -7,3 +7,7 @@ gp_allow_install_plugins: true
 gp_enqueue_bootstrap: true
 gp_enqueue_base: true
 gp_enqueue_theme_main: true
+
+gp_language_switcher_flag: true
+gp_language_switcher_name: false
+gp_language_switcher_slug: true

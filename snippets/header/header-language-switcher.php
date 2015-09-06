@@ -4,7 +4,7 @@
     <?php if(function_exists('pll_the_languages') && 
             function_exists('pll_current_language')) : ?>
     
-        <div class="navbar-form navbar-right">
+        <div class="navbar-form navbar-right navbar-language-switcher">
             <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" 
                         type="button" 
@@ -12,7 +12,40 @@
                         data-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false">
-                    <?php echo pll_current_language('flag'); ?>
+                    <?php
+                        
+                        $flag = false;
+                    
+                        if(GPConfig::getInstance()->get_cfg('gp_language_switcher_flag') )
+                        {
+                            echo '<span class="gp-ls-flag">' .
+                            pll_current_language('flag') .
+                            '</span>';
+                            $flag = true;
+                        }
+                        if(GPConfig::getInstance()->get_cfg('gp_language_switcher_name') )
+                        {
+                            if($flag)
+                            {
+                                echo '&nbsp;';
+                            }
+                            
+                            echo '<span class="gp-ls-name">' .
+                            pll_current_language('name') .
+                            '</span>';
+                        }
+                        elseif(GPConfig::getInstance()->get_cfg('gp_language_switcher_slug') )
+                        {
+                            if($flag)
+                            {
+                                echo '&nbsp;';
+                            }
+                            echo '<span class="gp-ls-name">' .
+                            pll_current_language('slug') .
+                            '</span>';
+                        }
+                    
+                    ?>
                     <!-- <span class="caret"></span> -->
                 </button>
                 
