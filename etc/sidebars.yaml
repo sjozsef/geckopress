@@ -14,6 +14,7 @@
     after_widget: '</div>'
     before_title: '<h5 class="widgettitle">'
     after_title: '</h5>'
+    ifcfg: gp_allow_footer_widgets
 2:
     id: 'footer-widget-2'
     name: 'Footer Widget 2. column'
@@ -22,6 +23,7 @@
     after_widget: '</div>'
     before_title: '<h5 class="widgettitle">'
     after_title: '</h5>'
+    ifcfg: gp_allow_footer_widgets
 3:
     id: 'footer-widget-3'
     name: 'Footer Widget 3. column'
@@ -30,6 +32,7 @@
     after_widget: '</div>'
     before_title: '<h5 class="widgettitle">'
     after_title: '</h5>'
+    ifcfg: gp_allow_footer_widgets
 4:
     id: 'footer-widget-4'
     name: 'Footer Widget 4. column'
@@ -38,3 +41,4 @@
     after_widget: '</div>'
     before_title: '<h5 class="widgettitle">'
     after_title: '</h5>'
+    ifcfg: gp_allow_footer_widgets

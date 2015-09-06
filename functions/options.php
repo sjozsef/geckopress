@@ -6,11 +6,6 @@
 
 add_filter( 'ot_theme_mode', '__return_true' );
 add_filter( 'ot_show_pages', '__return_false');
-//add_filter( 'ot_child_theme_mode', '__return_true' );
-
-//add_filter( 'ot_show_settings_import', '__return_true' );
-//add_filter( 'ot_show_settings_export', '__return_true' );
-//add_filter( 'ot_show_docs', '__return_true' );
 
 require_once( TEMPLATEPATH . '/option-tree/ot-loader.php' );
 

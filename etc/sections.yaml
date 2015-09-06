@@ -13,3 +13,4 @@ footer:
 install-plugins:
 	id: install-plugins
 	title: Install plugins
+	ifcfg: gp_allow_install_plugins

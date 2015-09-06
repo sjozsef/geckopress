@@ -1,3 +1,5 @@
+<?php if(GPConfig::getInstance()->get_cfg('gp_allow_footer_widgets')) : ?>
+
 <div id="footer-widgets">
     <div class="container">
         <div class="row">
@@ -16,3 +18,5 @@
         </div>
     </div>
 </div>
+
+<?php endif; ?>

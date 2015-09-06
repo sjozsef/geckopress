@@ -44,6 +44,7 @@ nav-logo:
 nav-social:
 	id: gp-nav-social
 	section: header
+	ifcfg: gp_allow_nav_social
 	label: 'Show social stuff in header'
 	desc: '<p>Enable or disable header social icons like Facebook, Twitter, etc...</p>'
 	type: 'on-off'
@@ -52,14 +53,16 @@ nav-social:
 nav-search:
 	id: gp-nav-search
 	section: header
+	ifcfg: gp_allow_nav_search
 	label: 'Show search form in header'
 	desc: '<p>Enable or disable header search form</p>'
 	type: 'on-off'
 	std: 'off'
 	
-nav-search:
+nav-language-switcher:
 	id: gp-nav-language-switcher
 	section: header
+	ifcfg: gp_allow_nav_language_switcher
 	label: 'Show language switcher in header'
 	desc: '<p>Enable or disable header language switcher</p>'
 	type: 'on-off'

@@ -11,7 +11,7 @@ function gp_register_scripts()
 
 function gp_enqueue_scripts()
 {
-    if(!is_admin())
+    if(!is_admin() && GPConfig::getInstance()->get_cfg('gp_enqueue_bootstrap'))
     {
         wp_enqueue_script('bootstrap');
     }

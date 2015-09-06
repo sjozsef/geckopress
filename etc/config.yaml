@@ -1,0 +1,9 @@
+gp_allow_nav_search: true
+gp_allow_nav_social: true
+gp_allow_nav_language_switcher: true
+gp_allow_footer_widgets: true
+gp_allow_install_plugins: true
+
+gp_enqueue_bootstrap: true
+gp_enqueue_base: true
+gp_enqueue_theme_main: true

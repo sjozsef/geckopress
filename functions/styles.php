@@ -25,9 +25,14 @@ function gp_enqueue_styles()
 {
     if(!is_admin())
     {
-        wp_enqueue_style('bootstrap');
-        wp_enqueue_style('gp_base');
-        wp_enqueue_style('theme_main');
+        if(GPConfig::getInstance()->get_cfg('gp_enqueue_bootstrap'))
+            wp_enqueue_style('bootstrap');
+            
+        if(GPConfig::getInstance()->get_cfg('gp_enqueue_base'))
+            wp_enqueue_style('gp_base');
+            
+        if(GPConfig::getInstance()->get_cfg('gp_enqueue_theme_main'))
+            wp_enqueue_style('theme_main');
     }
 }
 

@@ -3,7 +3,7 @@
 require_once(TEMPLATEPATH . '/functions/wp_bootstrap_navwalker.php');
 
 wp_nav_menu( array(
-    'menu'       => 'primary',
+    'theme_location' => 'primary',
     'depth'      => 2,
     'container'  => false,
     'menu_class' => 'nav navbar-nav',
