@@ -21,6 +21,11 @@
     border: 0 none;
 }
 
+#gp-header-language-switcher img 
+{
+	vertical-align: baseline;
+}
+
 /* ======================================
         Footer
  ===================================== */

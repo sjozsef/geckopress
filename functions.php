@@ -36,4 +36,10 @@ function gp_load_yaml($filename)
     }
 }
 
+function gp_theme_setup()
+{
+    load_theme_textdomain('geckopress', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'gp_theme_setup');
+
 ?>

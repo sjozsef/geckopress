@@ -7,7 +7,7 @@
 /**
  * Child Theme Mode
  */
-# add_filter( 'ot_child_theme_mode', '__return_false' );
+add_filter( 'ot_child_theme_mode', '__return_false' );
 
 /**
  * Show Settings Pages

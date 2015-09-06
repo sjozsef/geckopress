@@ -5,6 +5,7 @@ customcss:
 	desc: '<p>Egyedi CSS kód, amely a <code>head</code> szekcióba kerül minden lapletöltéskor.</p>'
 	type: css 
 	rows: 8
+	std: ''
 	
 customjs:
 	id: gp-custom-js
@@ -13,6 +14,7 @@ customjs:
 	desc: '<p>Egyedi Javascript kód, amely a <code>body</code> szekció legvégére kerül minden lapletöltéskor.</p>'
 	type: javascript 
 	rows: 8
+	std: ''
 
 analytics:
 	id: gp-analytics
@@ -21,6 +23,7 @@ analytics:
 	desc: 'Google Analytics követőkód.'
 	type: textarea-simple
 	rows: 4
+	std: ''
 	
 logo:
 	id: gp-logo
@@ -28,6 +31,7 @@ logo:
 	label: 'Your site logo'
 	description: 'Upload a logo (png) or leave blank for text-based logo'
 	type: upload
+	std: ''
 	
 nav-logo:
 	id: gp-hidden-nav-logo
@@ -35,6 +39,7 @@ nav-logo:
 	label: 'Hide logo in the navbar'
 	desc: '<p>Enable this if you want to hide logo in the main navigation bar</p>'
 	type: 'on-off'
+	std: 'off'
 			
 nav-social:
 	id: gp-nav-social
@@ -42,6 +47,7 @@ nav-social:
 	label: 'Show social stuff in header'
 	desc: '<p>Enable or disable header social icons like Facebook, Twitter, etc...</p>'
 	type: 'on-off'
+	std: 'off'
 	
 nav-search:
 	id: gp-nav-search
@@ -49,6 +55,15 @@ nav-search:
 	label: 'Show search form in header'
 	desc: '<p>Enable or disable header search form</p>'
 	type: 'on-off'
+	std: 'off'
+	
+nav-search:
+	id: gp-nav-language-switcher
+	section: header
+	label: 'Show language switcher in header'
+	desc: '<p>Enable or disable header language switcher</p>'
+	type: 'on-off'
+	std: 'off'
 	
 home-slider:
 	id: gp-home-slider
@@ -56,6 +71,7 @@ home-slider:
 	label: 'Homepage slider'
 	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
 	type: 'text'
+	std: ''
 	
 footer-text:
 	id: gp-footer-text
@@ -63,6 +79,7 @@ footer-text:
 	label: 'Footer text'
 	desc: '<p>Set up your footer text like copyright stuff, some links, etc... HTML allowed!</p>'
 	type: 'textarea'
+	std: ''
 
 slider-plugin:
 	id: gp-slider-plugin
