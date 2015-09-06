@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: OptionTree\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-01 00:04-0800\n"
-"PO-Revision-Date: Sun Sep 06 2015 14:13:41 GMT+0200 (CEST)\n"
+"PO-Revision-Date: Sun Sep 06 2015 14:08:02 GMT+0200 (CEST)\n"
 "Last-Translator: sjozsef <sjozsef0227@gmail.com>\n"
 "Language-Team: Valen Designs\n"
 "Language: Hungarian\n"
@@ -573,7 +573,7 @@ msgstr ""
 
 #: ../includes/ot-functions-admin.php:4144
 msgid "Add Choice"
-msgstr "Választási lehetőség hozzáadása"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:4150
 msgid "<strong>Settings</strong>: This will only affect the List Item option type."
@@ -582,7 +582,7 @@ msgstr ""
 #: ../includes/ot-functions-admin.php:4155
 #: ../includes/ot-functions-settings-page.php:93
 msgid "Add Setting"
-msgstr "Beállítás hozzáadása"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:4161
 msgid ""
@@ -658,15 +658,15 @@ msgstr ""
 
 #: ../includes/ot-functions-admin.php:5514
 msgid "Link URL"
-msgstr "Link URL"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5521
 msgid "Link Title"
-msgstr "Link címe"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5551
 msgid "Quote"
-msgstr "Idézet"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5560
 msgid "Source Name (ex. author, singer, actor)"
@@ -674,7 +674,7 @@ msgstr ""
 
 #: ../includes/ot-functions-admin.php:5567
 msgid "Source URL"
-msgstr "Forrás URL"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5574
 msgid "Source Title (ex. book, song, movie)"
@@ -686,7 +686,7 @@ msgstr ""
 
 #: ../includes/ot-functions-admin.php:5611
 msgid "Video"
-msgstr "Videó"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5620
 #, php-format
@@ -699,11 +699,11 @@ msgstr ""
 #: ../includes/ot-functions-admin.php:5620
 #: ../includes/ot-functions-admin.php:5659
 msgid "Wordpress Codex"
-msgstr "WordPress kódex"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5650
 msgid "Audio"
-msgstr "Hang"
+msgstr ""
 
 #: ../includes/ot-functions-admin.php:5659
 #, php-format
@@ -721,7 +721,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:32
 msgid "ID"
-msgstr "Azonosító"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:33
 msgid ""
@@ -733,7 +733,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:35
 msgid "Type"
-msgstr "Típus"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:36
 msgid ""
@@ -752,7 +752,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:46
 msgid "Choices"
-msgstr "Választási lehetőségek"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:47
 msgid ""
@@ -769,7 +769,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:52
 msgid "Standard"
-msgstr "Sztenderd"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:53
 msgid ""
@@ -793,17 +793,10 @@ msgid ""
 "your own custom <code>post_type</code>. At this time <code>any</code> does "
 "not seem to return results properly and is something I plan on looking into."
 msgstr ""
-"Add meg a bejegyzés típusokat vesszővel elválasztva, például <code>post,"
-"page</code>. Csak a következő opciótípusokra lesz hatással: Egyedi "
-"tartalomtípus checkbox, Egyedi tartalomtípus választó. \n"
-"Alább láthatóak az alapértelmezett tartalomtípusok, amelyek a WordPress -ben "
-"elérhetőek és kompatibilisek az OptionTree -vel. Hozzáadhatod az egyedi "
-"bejegyzéstípusaidat is. Jelenleg úgy néz ki, hogy az <code>any</code> nem ad "
-"vissza megfelelő eredményeket, terveim szerint ennek utánajárok."
 
 #: ../includes/ot-functions-docs-page.php:67
 msgid "Taxonomy"
-msgstr "Taxonómia"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:68
 msgid ""
@@ -814,7 +807,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:70
 msgid "Min, Max, & Step"
-msgstr "Minimum, Maximum, Lépés"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:71
 msgid ""
@@ -826,7 +819,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:73
 msgid "CSS Class"
-msgstr "CSS osztály"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:74
 msgid "Add and optional class to any option type."
@@ -834,7 +827,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:76
 msgid "Condition"
-msgstr "Kondíció"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:77
 #, php-format
@@ -847,7 +840,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:79
 msgid "Operator"
-msgstr "Operátor"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:80
 #, php-format
@@ -943,11 +936,11 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:139
 msgid "Input"
-msgstr "Bemenet"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:145
 msgid "Output"
-msgstr "Kimenet"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:154
 #, php-format
@@ -1332,7 +1325,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:498
 msgid "Echo the output."
-msgstr "Kimenet renderelése"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:502
 msgid "Used to indicate the $item_id is an array of values."
@@ -1420,7 +1413,7 @@ msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:651
 msgid "For Developers"
-msgstr "Fejlesztőknek"
+msgstr ""
 
 #: ../includes/ot-functions-docs-page.php:653
 #: ../includes/ot-functions-docs-page.php:682
