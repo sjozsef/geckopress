@@ -50,14 +50,14 @@
                 </button>
                 
                 <?php 
-                    $args = [
+                    $args = array(
                         'echo' => false,
                         'dropdown' =>false,
                         'show_flags' => true,
                         'show_names' => true,
                         'hide_if_empty' => false,
                         'raw' => false
-                        ];
+                        );
                     $list = pll_the_languages(array_merge($args));
                 ?>
                 

@@ -40,15 +40,22 @@ nav-logo:
 	desc: '<p>Enable this if you want to hide logo in the main navigation bar</p>'
 	type: 'on-off'
 	std: 'off'
-			
-nav-social:
-	id: gp-nav-social
+
+nav-social-enabled:
+	id: gp-nav-social-enabled
 	section: header
 	ifcfg: gp_allow_nav_social
 	label: 'Show social stuff in header'
 	desc: '<p>Enable or disable header social icons like Facebook, Twitter, etc...</p>'
 	type: 'on-off'
 	std: 'off'
+	
+nav-social:
+	id: gp-nav-social
+	section: header
+	ifcfg: gp_allow_nav_social
+	label: 'Social icons'
+	type: colorpicker
 	
 nav-search:
 	id: gp-nav-search

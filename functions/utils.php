@@ -18,7 +18,7 @@ function gp_process_yaml_array($array)
     {
         $add = true;
         
-        if(isset($val['ifcfg']))
+        if(is_array($val) && isset($val['ifcfg']))
         {
             if(!GPConfig::getInstance()->get_cfg($val['ifcfg']))
             {
@@ -71,5 +71,16 @@ function gp_theme_setup()
     load_theme_textdomain('geckopress', get_template_directory() . '/languages');
 }
 add_action('after_setup_theme', 'gp_theme_setup');
+
+/**
+ * Add custom style sheet to the HTML Editor
+ * don't forget to also include the editor-style.css in you theme directory
+ **/
+function gp_add_editor_styles()
+{
+    add_editor_style( 'assets/css/editor-style.css' );
+}
+add_action( 'init', 'gp_add_editor_styles' );
+	
 
 ?>

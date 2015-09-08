@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2 (alpha2)
+## 0.1.1
 
 - Lot of bugfixes and improvements
 
