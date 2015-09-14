@@ -31,7 +31,9 @@ $gp_custom_js = ot_get_option( 'gp-custom-js', false );
 <?php if ( $gp_custom_js ) : ?>
 
 <script type="text/javascript">
-    <?php echo $gp_custom_js; ?>
+/* <![CDATA[ */
+    <?= $gp_custom_js; ?>
+/* ]]> */
 </script>
 
 <?php endif; ?>

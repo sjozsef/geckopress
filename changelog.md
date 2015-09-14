@@ -6,6 +6,7 @@
 - Bootstrap .container css class renamed to bs-container because of a collision with SiteOrigin Page Builder
 - Better code quality
 - Default YAML files changed (non associative arrays if not needed)
+- Added screenshot
 
 ## 0.1.1
 
