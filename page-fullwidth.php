@@ -6,7 +6,7 @@ Template name: Page (fullwidth)
 
 <?php get_header(); ?>
 
-<div class="container">
+<div class="bs-container">
             
     <div class="main-content">
     

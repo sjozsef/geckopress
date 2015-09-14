@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-    <div class="container">
+    <div class="bs-container">
 
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target=

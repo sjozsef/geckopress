@@ -3,7 +3,7 @@
 function gp_register_styles()
 {
     wp_register_style('bootstrap', 
-        get_template_directory_uri() . '/assets/css/bootstrap.min.css',
+        get_template_directory_uri() . '/assets/css/bootstrap.css',
         array(),
         '',
         'all');

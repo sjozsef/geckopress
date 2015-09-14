@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="bs-container">
             
     <div class="main-content not-found-content">
     

@@ -1,1 +1,1 @@
-<div id="main-content-wrap">
+<div id="fullwidth-container">

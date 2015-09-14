@@ -1,7 +1,7 @@
 <?php if(GPConfig::getInstance()->get_cfg('gp_allow_footer_widgets')) : ?>
 
 <div id="footer-widgets">
-    <div class="container">
+    <div class="bs-container">
         <div class="row">
             <div class="col-md-3 footer-widget-container">
                 <?php dynamic_sidebar('footer-widget-1'); ?>

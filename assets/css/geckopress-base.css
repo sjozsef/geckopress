@@ -115,9 +115,9 @@ ul.sub-menu
         Main content structure
  ===================================== */
  
-#main-content-wrap
+#fullwidth-container
 {
-    margin: 20px;
+    margin: 24px auto;
 }
 
 /* ======================================

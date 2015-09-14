@@ -2,7 +2,7 @@
 
 <?php get_template_part('snippets/loops/archive-title'); ?>
 
-<div class="container">
+<div class="bs-container">
     
     <div class="row">
         

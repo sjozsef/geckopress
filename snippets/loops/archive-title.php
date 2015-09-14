@@ -1,4 +1,4 @@
-<div class="container archive-title">
+<div class="bs-container archive-title">
 	<?php if(!is_home()) : ?>
 
 		<h1>
