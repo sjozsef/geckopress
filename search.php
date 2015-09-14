@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('snippets/loops/archive-title'); ?>
+<?php get_template_part( 'snippets/loops/archive-title' ); ?>
 
 <div class="bs-container">
     
@@ -10,11 +10,11 @@
             
             <div id="main-content-wrap">
             
-                <?php if(have_posts()) : ?>
+                <?php if ( have_posts() ) : ?>
         
-                    <?php while(have_posts()) : the_post(); ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
                     
-                        <?php get_template_part('snippets/loops/archive', 'search'); ?>
+                        <?php get_template_part( 'snippets/loops/archive', 'search' ); ?>
                     
                     <?php endwhile; ?>
                 
@@ -30,7 +30,7 @@
             
             <div id="sidebar-left" class="sidebar">
                 
-                <?php dynamic_sidebar('sidebar'); ?>
+                <?php dynamic_sidebar( 'sidebar' ); ?>
                 
             </div>
             

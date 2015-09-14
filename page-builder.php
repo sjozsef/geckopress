@@ -10,9 +10,9 @@ Template name: Template for Page Builder
             
     <div class="main-content">
     
-        <?php if(have_posts()) : ?>
+        <?php if ( have_posts() ) : ?>
 
-            <?php while(have_posts()) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
             
                 <div class="post-content page-builder-content">
                     <?php the_content(); ?>

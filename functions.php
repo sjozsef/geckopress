@@ -12,7 +12,7 @@ require_once( TEMPLATEPATH . '/functions/image-sizes.php' );
 require_once( TEMPLATEPATH . '/functions/theme-supports.php' );
 
 if ( ! is_admin() ) {
-    require_once( TEMPLATEPATH . '/functions/wp_bootstrap_pagination.php' );
+	require_once( TEMPLATEPATH . '/functions/wp_bootstrap_pagination.php' );
 }
 
 ?>

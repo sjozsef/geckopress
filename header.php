@@ -1,4 +1,4 @@
-<?php defined('ABSPATH') or die("Direct access not allowed."); ?>
+<?php defined( 'ABSPATH' ) or die( 'Direct access not allowed.' ); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -10,15 +10,14 @@
     
     <?php wp_head(); ?>
     
-    <?php //Custom css
-        $custom_css = ot_get_option('gp-custom-css', false);
-        if($custom_css)
-        {
-            echo '<style>' .  $custom_css . '</style>';
-        }
-    ?>
+    <?php // Custom css
+		$custom_css = ot_get_option( 'gp-custom-css', false );
+	if ( $custom_css ) {
+		echo '<style>' .  $custom_css . '</style>';
+	}
+	?>
     
 </head>
 <body <?php body_class( ); ?>>
     <div id="main">
-        <?php get_template_part('snippets/header/header'); ?>
+        <?php get_template_part( 'snippets/header/header' ); ?>

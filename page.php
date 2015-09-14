@@ -8,11 +8,11 @@
             
             <div class="main-content">
             
-                <?php if(have_posts()) : ?>
+                <?php if ( have_posts() ) : ?>
         
-                    <?php while(have_posts()) : the_post(); ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
                     
-                        <?php get_template_part('snippets/loops/single', 'page'); ?>
+                        <?php get_template_part( 'snippets/loops/single', 'page' ); ?>
                     
                     <?php endwhile; ?>
                 
@@ -26,7 +26,7 @@
             
             <div id = "sidebar-left" class="sidebar">
                 
-                <?php dynamic_sidebar('sidebar'); ?>
+                <?php dynamic_sidebar( 'sidebar' ); ?>
                 
             </div>
             

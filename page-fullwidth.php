@@ -10,11 +10,11 @@ Template name: Page (fullwidth)
             
     <div class="main-content">
     
-        <?php if(have_posts()) : ?>
+        <?php if ( have_posts() ) : ?>
 
-            <?php while(have_posts()) : the_post(); ?>
+            <?php while ( have_posts() ) : the_post(); ?>
             
-                <?php get_template_part('snippets/loops/single', 'page'); ?>
+                <?php get_template_part( 'snippets/loops/single', 'page' ); ?>
             
             <?php endwhile; ?>
         
