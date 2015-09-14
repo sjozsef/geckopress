@@ -120,6 +120,11 @@ ul.sub-menu
     margin: 24px auto;
 }
 
+.page-template-page-builder #fullwidth-container
+{
+	margin: 0 auto;
+}
+
 /* ======================================
         Post content images
  ===================================== */
