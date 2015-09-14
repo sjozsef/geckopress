@@ -55,7 +55,39 @@ nav-social:
 	section: header
 	ifcfg: gp_allow_nav_social
 	label: 'Social icons'
-	type: colorpicker
+	type: list-item
+	settings:
+		-
+			id: gp-nav-social-href
+			label: 'Link'
+			type: text
+		-
+			id: gp-nav-social-site 
+			type: select 
+			label: 'Type'
+			choices:
+				-
+					value: ''
+					label: '-- select --'
+				-
+					value: 'facebook'
+					label: 'Facebook'
+				-
+					value: 'twitter'
+					label: 'Twitter'
+				- 
+					value: 'google'
+					label: 'Google +'
+				- 
+					value: 'pinterest'
+					label: 'Pinterest'
+				-
+					value: 'linkedin'
+					label: 'LinkedIN'
+				-
+					value: 'github'
+					label: 'GitHub'
+					
 	
 nav-search:
 	id: gp-nav-search
