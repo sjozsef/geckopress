@@ -8,6 +8,8 @@
 - Default YAML files changed (non associative arrays if not needed)
 - Added screenshot
 - Added hover dropdown navigation menus optionally
+- Responsive video embed added
+- GeckoPress base js added
 
 ## 0.1.1
 
