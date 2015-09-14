@@ -1,16 +1,16 @@
-general:
+-
 	id: general
 	title: General
 
-header:
+-
 	id: header
 	title: Header
 
-footer:
+-
 	id: footer
 	title: Footer
 	
-install-plugins:
+-
 	id: install-plugins
 	title: Install plugins
 	ifcfg: gp_allow_install_plugins
