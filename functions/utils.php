@@ -81,6 +81,13 @@ function gp_add_editor_styles()
     add_editor_style( 'assets/css/editor-style.css' );
 }
 add_action( 'init', 'gp_add_editor_styles' );
-	
+
+
+
+function gp_oembed_filter($html, $url, $attr, $post_ID) {
+    $return = '<div class="video-container">'.$html.'</div>';
+    return $return;
+}
+add_filter( 'embed_oembed_html', 'gp_oembed_filter', 10, 4 );
 
 ?>
