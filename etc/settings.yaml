@@ -32,6 +32,23 @@
 	description: 'Upload a logo (png) or leave blank for text-based logo'
 	type: upload
 	std: ''
+
+-
+	id: gp-nav-hover-dropdowns
+	section: header
+	label: 'Hover dropdowns'
+	desc: '<p>By default, dropdown menus triggered with click. If you enable this options dropdown menus will be triggered at hover.</p>'
+	type: 'on-off'
+	std: 'off'
+	
+-
+	id: gp-nav-disable-mobile-dropdowns
+	section: header
+	label: 'Force one-level navigation on mobile'
+	desc: '<p>If Hover dropdowns is enabled, you can disable the second level navigation on mobile devices. If you don\'t disable it, the parent menuitem can\'t be a link.</p>'
+	type: 'on-off'
+	std: 'off'
+	condition: 'gp-nav-hover-dropdowns:is(on)' #this option only needed if hover dropdowns are enabled
 	
 -
 	id: gp-hidden-nav-logo
@@ -51,10 +68,10 @@
 	std: 'off'
 	
 -
-	id: gp-nav-social
-	section: header
+	id: gp-social-links
+	section: social
 	ifcfg: gp_allow_nav_social
-	label: 'Social icons'
+	label: 'Social links'
 	type: list-item
 	settings:
 		-

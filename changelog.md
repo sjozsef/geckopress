@@ -7,6 +7,7 @@
 - Better code quality
 - Default YAML files changed (non associative arrays if not needed)
 - Added screenshot
+- Added hover dropdown navigation menus optionally
 
 ## 0.1.1
 

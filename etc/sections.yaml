@@ -11,6 +11,10 @@
 	title: Footer
 	
 -
+	id: social
+	title: Social
+	
+-
 	id: install-plugins
 	title: Install plugins
 	ifcfg: gp_allow_install_plugins

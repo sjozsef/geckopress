@@ -21,6 +21,15 @@
     border: 0 none;
 }
 
+@media only screen and (min-width: 769px) {
+	.navbar-nav.hover-dropdown .dropdown:hover .dropdown-menu
+	{
+	    display: block;
+	    margin-top: 0;
+	}
+}
+
+
 #gp-header-language-switcher img 
 {
 	vertical-align: baseline;
@@ -237,3 +246,4 @@ img.alignnone,
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
+
