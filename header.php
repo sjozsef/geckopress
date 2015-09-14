@@ -1,5 +1,15 @@
-<?php defined( 'ABSPATH' ) or die( 'Direct access not allowed.' ); ?>
-<!DOCTYPE html>
+<?php
+/**
+ * The header.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
@@ -10,7 +20,7 @@
     
     <?php wp_head(); ?>
     
-    <?php // Custom css
+    <?php
 		$custom_css = ot_get_option( 'gp-custom-css', false );
 	if ( $custom_css ) {
 		echo '<style>' .  $custom_css . '</style>';

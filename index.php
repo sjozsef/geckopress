@@ -1,4 +1,19 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The homepage template file.
+ *
+ * If there is not a static home page, this file will be loaded.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
     

@@ -1,10 +1,21 @@
 <?php
-/*
-Template name: Template for Page Builder
-*/
-?>
+/**
+ * A page template for Page Builder
+ *
+ * This page template has no margins and does not displaying the page title.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ *
+ * Template name: Template for Page Builder
+ */
 
-<?php get_header(); ?>
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
             

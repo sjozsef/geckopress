@@ -1,4 +1,19 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template file displaying single blog posts.
+ *
+ * This page template has no margins and does not displaying the page title.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
     

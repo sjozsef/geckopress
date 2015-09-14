@@ -1,4 +1,15 @@
-<?php defined( 'ABSPATH' ) or die( 'Direct access not allowed.' ); ?>
+<?php
+/**
+ * The footer.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+?>
 
     <?php get_template_part( 'snippets/footer/footer' ); ?>
 

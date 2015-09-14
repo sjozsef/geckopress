@@ -1,4 +1,19 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Basic page
+ *
+ * This page template has a sidebar at the right.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
     

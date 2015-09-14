@@ -1,4 +1,19 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template file for search archives
+ *
+ * This file is loaded when it is a search archive.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <?php get_template_part( 'snippets/loops/archive-title' ); ?>
 

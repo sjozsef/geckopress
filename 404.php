@@ -9,7 +9,11 @@
  * @since 0.1
  */
 
-get_header(); ?>
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
             

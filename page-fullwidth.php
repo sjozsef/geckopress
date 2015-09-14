@@ -1,10 +1,21 @@
 <?php
-/*
-Template name: Page (fullwidth)
-*/
-?>
+/**
+ * A fullwidth page template
+ *
+ * This page template has no sidebars.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ *
+ * Template name: Fullwidth page
+ */
 
-<?php get_header(); ?>
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <div class="bs-container">
             

@@ -1,4 +1,17 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main archive template file
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
+
+get_header();
+
+?>
 
 <?php get_template_part( 'snippets/loops/archive-title' ); ?>
 

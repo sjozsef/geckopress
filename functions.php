@@ -1,4 +1,17 @@
 <?php
+/**
+ * The main functions file.
+ *
+ * This file is loaded by WordPress after the child theme's functions.php.
+ *
+ * @package GeckoPress
+ * @subpackage Main
+ * @since 0.1
+ *
+ * Template name: Template for Page Builder
+ */
+
+defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
 
 require_once( TEMPLATEPATH . '/functions/spyc.php' );
 require_once( TEMPLATEPATH . '/functions/utils.php' );
