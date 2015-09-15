@@ -3,6 +3,8 @@
 GeckoPress is a lightweight but feature rich WordPress theme framework. Basically
 it's a simple theme built on Bootstrap and optimized for child templates.
 
+**Please note: GeckoPress is currently in alpha.**
+
 ## Key features
 
 The main goal is to provide a simple framework that implements everything you need 

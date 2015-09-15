@@ -90,4 +90,22 @@ function gp_oembed_filter($html, $url, $attr, $post_ID) {
 }
 add_filter( 'embed_oembed_html', 'gp_oembed_filter', 10, 4 );
 
+function gp_so_widget_folders($folders) {
+    $folders[] = TEMPLATEPATH . '/so-widgets/';
+    return $folders;
+}
+add_filter('siteorigin_widgets_widget_folders', 'gp_so_widget_folders');
+
+function gp_add_widget_tabs($tabs) {
+    $tabs[] = array(
+        'title' => __('GeckoPress widgets', 'geckopress'),
+        'filter' => array(
+            'groups' => array('geckopress')
+        )
+    );
+
+    return $tabs;
+}
+add_filter('siteorigin_panels_widget_dialog_tabs', 'gp_add_widget_tabs', 20);
+
 ?>

@@ -8,7 +8,6 @@
  * @subpackage Main
  * @since 0.1
  *
- * Template name: Template for Page Builder
  */
 
 defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
