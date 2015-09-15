@@ -11,7 +11,7 @@
 - GeckoPress base js added
 - Contact Form 7 widget for SiteOrigin Page Builder added.
 - Lot of other bugfixes and improvements
-- 
+
 ## 0.1.1
 
 - Lot of bugfixes and improvements
