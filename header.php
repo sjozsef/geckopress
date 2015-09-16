@@ -28,6 +28,6 @@ defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
 	?>
     
 </head>
-<body <?php body_class( ); ?>>
+<body <?php body_class(); ?>>
     <div id="main">
         <?php get_template_part( 'snippets/header/header' ); ?>

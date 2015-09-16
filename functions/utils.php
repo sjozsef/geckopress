@@ -82,7 +82,16 @@ function gp_add_editor_styles()
 }
 add_action( 'init', 'gp_add_editor_styles' );
 
-
+function gp_body_classes($classes)
+{
+    if( GPConfig::getInstance()->get_cfg( 'gp_lightbox_enabled' ) )
+    {
+        $classes[] = 'gp-lightbox';
+    }
+    
+    return $classes;
+}
+add_filter ( 'body_class', 'gp_body_classes' );
 
 function gp_oembed_filter($html, $url, $attr, $post_ID) {
     $return = '<div class="video-container">'.$html.'</div>';

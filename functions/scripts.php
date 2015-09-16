@@ -8,6 +8,12 @@ function gp_register_scripts()
         '',
         true);
         
+    wp_register_script('lightbox', 
+        get_template_directory_uri() . '/assets/js/lightbox.js',
+        array('jquery'),
+        '',
+        true);
+        
     wp_register_script('gp_base',
         get_template_directory_uri() . '/assets/js/geckopress-base.js',
         array('jquery'),
@@ -17,13 +23,21 @@ function gp_register_scripts()
 
 function gp_enqueue_scripts()
 {
-    if(!is_admin() && GPConfig::getInstance()->get_cfg('gp_enqueue_bootstrap'))
+    if(!is_admin())
     {
-        wp_enqueue_script('bootstrap');
+        if( GPConfig::getInstance()->get_cfg('gp_enqueue_bootstrap') )
+        {
+            wp_enqueue_script('bootstrap');
+        }
         
         if(GPConfig::getInstance()->get_cfg('gp_enqueue_base'))
         {
             wp_enqueue_script('gp_base');
+        }
+        
+        if(GPConfig::getInstance()->get_cfg('gp_lightbox_enabled'))
+        {
+            wp_enqueue_script('lightbox');
         }
     }
 }

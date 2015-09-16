@@ -14,9 +14,21 @@ function hover_dropdown_fix()
     }
 }
 
+function init_lightbox()
+{
+    if(jQuery('body').hasClass('gp-lightbox'))
+    {
+        var select = jQuery('a[href$=".bmp"],a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".BMP"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]');
+    	select.attr('data-lightbox', 'post-images');
+    	select.attr('class', 'lightbox-link');
+    }
+}
+
 jQuery(document).ready(function()
 {
     hover_dropdown_fix();
+    init_lightbox();
+    
     jQuery(window).resize(function()
     {
        hover_dropdown_fix();

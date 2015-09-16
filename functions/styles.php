@@ -8,6 +8,12 @@ function gp_register_styles()
         '',
         'all');
         
+    wp_register_style('lightbox', 
+        get_template_directory_uri() . '/assets/css/lightbox.css',
+        array(),
+        '',
+        'all');
+        
     wp_register_style('gp_base', 
         get_template_directory_uri() . '/assets/css/geckopress-base.css',
         array('bootstrap'),
@@ -27,6 +33,9 @@ function gp_enqueue_styles()
     {
         if(GPConfig::getInstance()->get_cfg('gp_enqueue_bootstrap'))
             wp_enqueue_style('bootstrap');
+            
+        if(GPConfig::getInstance()->get_cfg('gp_lightbox_enabled'))
+            wp_enqueue_style('lightbox');
             
         if(GPConfig::getInstance()->get_cfg('gp_enqueue_base'))
             wp_enqueue_style('gp_base');
