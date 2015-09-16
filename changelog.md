@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3
+
+- Added lightbox 
+- Added support of sticky posts
+
 ## 0.2
 
 - Bootstrap .container css class renamed to bs-container because of a collision with SiteOrigin Page Builder

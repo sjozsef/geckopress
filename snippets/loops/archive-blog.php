@@ -1,4 +1,4 @@
-<div class="blog-item">
+<div id="post-<?php the_ID(); ?>" <?php post_class('blog-item'); ?>>
         
     <?php if ( has_post_thumbnail() ) : ?>
         <div class="post-thumbnail">
