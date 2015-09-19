@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4
+
+- Added bootstrap less compiler
+
 ## 0.3
 
 - Added lightbox 

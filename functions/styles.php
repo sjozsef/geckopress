@@ -55,9 +55,6 @@ function gp_enqueue_styles()
         if(GPConfig::getInstance()->get_cfg('gp_lightbox_enabled'))
             wp_enqueue_style('lightbox');
             
-        if(GPConfig::getInstance()->get_cfg('gp_enqueue_base'))
-            wp_enqueue_style('gp_base');
-            
         if(GPConfig::getInstance()->get_cfg('gp_enqueue_theme_main'))
             wp_enqueue_style('theme_main');
     }
