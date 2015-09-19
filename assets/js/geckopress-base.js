@@ -1,6 +1,6 @@
 function hover_dropdown_fix()
 {
-    if(jQuery(window).width() <= 768)
+    if(jQuery(window).width() <= 992)
     {
         jQuery('.navbar-nav.hover-dropdown.mobile-multilevel .menu-item-has-children > a')
             .addClass('dropdown-toggle')

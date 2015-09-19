@@ -2,7 +2,6 @@
 	id: gp-custom-css
 	section: general
 	label: 'Custom CSS'
-	desc: '<p>Egyedi CSS kód, amely a <code>head</code> szekcióba kerül minden lapletöltéskor.</p>'
 	type: css 
 	rows: 8
 	std: ''
@@ -10,8 +9,7 @@
 -
 	id: gp-custom-js
 	section: general
-	label: 'Egyedi Javascript'
-	desc: '<p>Egyedi Javascript kód, amely a <code>body</code> szekció legvégére kerül minden lapletöltéskor.</p>'
+	label: 'Custom JS'
 	type: javascript 
 	rows: 8
 	std: ''
@@ -20,7 +18,6 @@
 	id: gp-analytics
 	section: general
 	label: 'Google Analytics'
-	desc: 'Google Analytics követőkód.'
 	type: textarea-simple
 	rows: 4
 	std: ''
@@ -32,6 +29,20 @@
 	description: 'Upload a logo (png) or leave blank for text-based logo'
 	type: upload
 	std: ''
+
+-
+	id: gp-nav-layout
+	section: header 
+	label: 'Header layout'
+	type: select
+	std: 'top-bar'
+	choices:
+		- 
+			value: 'simple'
+			label: 'Simple (one row)'
+		-
+			value: 'top-bar'
+			label: 'Top bar navigation'
 
 -
 	id: gp-nav-hover-dropdowns
@@ -66,6 +77,32 @@
 	desc: '<p>Enable or disable header social icons like Facebook, Twitter, etc...</p>'
 	type: 'on-off'
 	std: 'off'
+	
+-
+	id: gp-nav-search
+	section: header
+	ifcfg: gp_allow_nav_search
+	label: 'Show search form in header'
+	desc: '<p>Enable or disable header search form</p>'
+	type: 'on-off'
+	std: 'off'
+	
+-
+	id: gp-nav-language-switcher
+	section: header
+	ifcfg: gp_allow_nav_language_switcher
+	label: 'Show language switcher in header'
+	desc: '<p>Enable or disable header language switcher</p>'
+	type: 'on-off'
+	std: 'off'
+	
+-
+	id: gp-home-slider
+	section: header
+	label: 'Homepage slider'
+	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
+	type: 'text'
+	std: ''
 	
 -
 	id: gp-social-links
@@ -105,33 +142,6 @@
 					value: 'github'
 					label: 'GitHub'
 					
-	
--
-	id: gp-nav-search
-	section: header
-	ifcfg: gp_allow_nav_search
-	label: 'Show search form in header'
-	desc: '<p>Enable or disable header search form</p>'
-	type: 'on-off'
-	std: 'off'
-	
--
-	id: gp-nav-language-switcher
-	section: header
-	ifcfg: gp_allow_nav_language_switcher
-	label: 'Show language switcher in header'
-	desc: '<p>Enable or disable header language switcher</p>'
-	type: 'on-off'
-	std: 'off'
-	
--
-	id: gp-home-slider
-	section: header
-	label: 'Homepage slider'
-	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
-	type: 'text'
-	std: ''
-	
 -
 	id: gp-footer-text
 	section: footer

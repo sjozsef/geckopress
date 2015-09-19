@@ -1,3 +1,12 @@
+<nav class="gp-top-bar small">
+    <div class="bs-container">
+
+        <?php get_template_part('snippets/header/header-menu-secondary'); ?>
+        <?php get_template_part('snippets/header/header-social'); ?>
+        <?php get_template_part('snippets/header/header-language-switcher'); ?>
+            
+    </div><!-- /.bs-container -->
+</nav>
 <nav class="navbar navbar-default">
     <div class="bs-container">
 
@@ -14,9 +23,9 @@
         "gp-navbar-collapse-1">
             
             <?php get_template_part('snippets/header/header-menu'); ?>
-            
-            <?php get_template_part('snippets/header/header-social'); ?>
-            <?php get_template_part('snippets/header/header-language-switcher'); ?>
+            <div class="mobile-secondary-menu">
+                <?php get_template_part('snippets/header/header-menu-secondary'); ?>
+            </div>
             <?php get_template_part('snippets/header/header-search'); ?>
             
         </div><!-- /.navbar-collapse -->

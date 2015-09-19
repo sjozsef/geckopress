@@ -30,10 +30,7 @@ function gp_enqueue_scripts()
             wp_enqueue_script('bootstrap');
         }
         
-        if(GPConfig::getInstance()->get_cfg('gp_enqueue_base'))
-        {
-            wp_enqueue_script('gp_base');
-        }
+        wp_enqueue_script('gp_base');
         
         if(GPConfig::getInstance()->get_cfg('gp_lightbox_enabled'))
         {

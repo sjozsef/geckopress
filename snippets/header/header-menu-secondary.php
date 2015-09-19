@@ -15,7 +15,7 @@ if(ot_get_option('gp-nav-hover-dropdowns', 'off') == 'on')
 }
 
 wp_nav_menu( array(
-    'theme_location' => 'primary',
+    'theme_location' => 'secondary',
     'depth'      => 2,
     'container'  => false,
     'menu_class' => 'nav navbar-nav' . $classes,

@@ -8,7 +8,7 @@ gp_enqueue_bootstrap: true
 gp_enqueue_theme_main: true
 
 gp_language_switcher_flag: true
-gp_language_switcher_name: false
-gp_language_switcher_slug: true
+gp_language_switcher_name: true
+gp_language_switcher_slug: false
 
 gp_lightbox_enabled: true
