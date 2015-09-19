@@ -1,9 +1,33 @@
 <?php
 
+require TEMPLATEPATH . '/functions/less.php/Less.php';
+
+function gp_compile_bootstrap()
+{
+        Less_Cache::$cache_dir = TEMPLATEPATH . '/assets/cache/bootstrap';
+        
+        $files = array();
+        $files[TEMPLATEPATH . '/assets/less/bootstrap/bootstrap.less'] = 
+            TEMPLATEPATH . '/assets/less/bootstrap/';
+            
+        $options = array();
+        $options_filtered = apply_filters('gp_bootstrap_less_options', $options);
+        
+        $variables = array();
+        $variables_filtered = apply_filters('gp_bootstrap_less_variables', $variables);
+        
+        $compiled_file = Less_Cache::Get( $files, 
+                                            $options_filtered, 
+                                            $variables_filtered );
+        
+        return $compiled_file;
+}
+
 function gp_register_styles()
 {
+    $bs = gp_compile_bootstrap();
     wp_register_style('bootstrap', 
-        get_template_directory_uri() . '/assets/css/bootstrap.css',
+        get_template_directory_uri() . '/assets/cache/bootstrap/' . $bs,
         array(),
         '',
         'all');
@@ -14,15 +38,9 @@ function gp_register_styles()
         '',
         'all');
         
-    wp_register_style('gp_base', 
-        get_template_directory_uri() . '/assets/css/geckopress-base.css',
-        array('bootstrap'),
-        '',
-        'all');
-        
     wp_register_style('theme_main', 
         get_stylesheet_directory_uri() . '/style.css',
-        array('gp_base'),
+        array('bootstrap'),
         '',
         'all');
 }
