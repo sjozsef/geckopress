@@ -3,6 +3,10 @@
 ## 0.4
 
 - Added bootstrap less compiler
+- Added social links stuff for header
+- Multiple header templates
+- A new, two row header template
+- SocIcons
 
 ## 0.3
 
