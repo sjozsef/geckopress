@@ -38,7 +38,7 @@
 .gp-social-link.google:before{content: 'c';}
 .gp-social-link.pinterest:before{content: 'd';}
 .gp-social-link.linkedin:before{content: 'j';}
-.gp-social-link.twitter:before{content: 'Q';}
+.gp-social-link.github:before{content: 'Q';}
 
 /* ======================================
         Social stuff
@@ -53,6 +53,19 @@
 .navbar-nav.nav.gp-social-links
 {
 	height: auto;
+}
+
+@media (max-width: @grid-float-breakpoint-max) {
+	.nav.navbar-nav.gp-social-links li
+	{
+		float: left;
+	}
+	.gp-top-bar .nav.navbar-nav.gp-social-links 
+	{
+		display: block;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 /* ======================================

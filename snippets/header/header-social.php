@@ -5,7 +5,7 @@ if( GPConfig::getInstance()->get_cfg('gp_allow_nav_social', false) &&
 {
     ?>
     
-    <div class="gp-header-social-wrap navbar-form navbar-right">
+    <div class="gp-header-social-wrap navbar-right">
         <?php get_template_part('snippets/common/social-links'); ?>
     </div>
     
