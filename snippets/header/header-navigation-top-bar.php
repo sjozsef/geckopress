@@ -2,8 +2,14 @@
     <div class="bs-container">
 
         <?php get_template_part('snippets/header/header-menu-secondary'); ?>
-        <?php get_template_part('snippets/header/header-social'); ?>
-        <?php get_template_part('snippets/header/header-language-switcher'); ?>
+        
+        <?php if(ot_get_option('gp-nav-social-position', 'bottom') == 'top') : ?>
+            <?php get_template_part('snippets/header/header-social'); ?>
+        <?php endif; ?>
+        
+        <?php if(ot_get_option('gp-nav-language-switcher-position', 'top') == 'top') : ?>
+            <?php get_template_part('snippets/header/header-language-switcher'); ?>
+        <?php endif; ?>
             
     </div><!-- /.bs-container -->
 </nav>
@@ -26,6 +32,12 @@
             <div class="mobile-secondary-menu">
                 <?php get_template_part('snippets/header/header-menu-secondary'); ?>
             </div>
+            <?php if(ot_get_option('gp-nav-language-switcher-position', 'top') == 'bottom') : ?>
+                <?php get_template_part('snippets/header/header-language-switcher'); ?>
+            <?php endif; ?>
+            <?php if(ot_get_option('gp-nav-social-position', 'bottom') == 'bottom') : ?>
+                <?php get_template_part('snippets/header/header-social'); ?>
+            <?php endif; ?>
             <?php get_template_part('snippets/header/header-search'); ?>
             
         </div><!-- /.navbar-collapse -->

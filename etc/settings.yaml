@@ -21,14 +21,6 @@
 	type: textarea-simple
 	rows: 4
 	std: ''
-	
--
-	id: gp-logo
-	section: header
-	label: 'Your site logo'
-	description: 'Upload a logo (png) or leave blank for text-based logo'
-	type: upload
-	std: ''
 
 -
 	id: gp-nav-layout
@@ -43,6 +35,75 @@
 		-
 			value: 'top-bar'
 			label: 'Top bar navigation'
+	
+-
+	id: gp-home-slider
+	section: header
+	label: 'Homepage slider'
+	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
+	type: 'text'
+	std: ''
+	
+-
+	id: header-logo-textlock
+	section: header
+	label: ""
+	desc: "<h1>Logo settings</h1><hr />"
+	type: textblock
+
+-
+	id: gp-logo
+	section: header
+	label: 'Your site logo'
+	description: 'Upload a logo (png) or leave blank for text-based logo'
+	type: upload
+	std: ''
+	
+-
+	id: gp-hidden-nav-logo
+	section: header
+	label: 'Hide logo in the navbar'
+	desc: '<p>Enable this if you want to hide logo in the main navigation bar</p>'
+	type: 'on-off'
+	std: 'off'
+	
+-
+	id: header-navigations-textbox
+	section: header
+	label: ""
+	desc: "<h1>Navigation settings</h1><hr />"
+	type: textblock
+
+-
+	id: gp-primary-nav-float
+	section: header
+	label: "Primary navigation floating"
+	desc: ""
+	type: select
+	choices:
+		-
+			value: left
+			label: Left
+		-
+			value: right
+			label: Right
+	std: 'left'
+	
+-
+	id: gp-secondary-nav-float
+	section: header
+	condition: 'gp-nav-layout:not(simple)'
+	label: "Secondary navigation floating"
+	desc: ""
+	type: select
+	choices:
+		-
+			value: left
+			label: Left
+		-
+			value: right
+			label: Right
+	std: 'left'
 
 -
 	id: gp-nav-hover-dropdowns
@@ -60,23 +121,65 @@
 	type: 'on-off'
 	std: 'off'
 	condition: 'gp-nav-hover-dropdowns:is(on)' #this option only needed if hover dropdowns are enabled
-	
+
 -
-	id: gp-hidden-nav-logo
+	id: header-social-textblock
 	section: header
-	label: 'Hide logo in the navbar'
-	desc: '<p>Enable this if you want to hide logo in the main navigation bar</p>'
-	type: 'on-off'
-	std: 'off'
+	ifcfg: gp_allow_nav_social
+	label: ""
+	desc: "<h1>Header social links</h1><hr />"
+	type: textblock
 
 -
 	id: gp-nav-social-enabled
 	section: header
 	ifcfg: gp_allow_nav_social
-	label: 'Show social stuff in header'
+	label: 'Show social links in header'
 	desc: '<p>Enable or disable header social icons like Facebook, Twitter, etc...</p>'
 	type: 'on-off'
 	std: 'off'
+	
+-
+	id: gp-nav-social-position
+	section: header
+	ifcfg: gp_allow_nav_social
+	condition: 'gp-nav-layout:not(simple),gp-nav-social-enabled:is(on)'
+	label: 'Social links position'
+	desc: '<p></p>'
+	type: 'select'
+	choices:
+		-
+			value: top
+			label: Top
+		-
+			value: bottom
+			label: Bottom
+	std: 'bottom'
+	
+-
+	id: gp-nav-social-float
+	section: header
+	ifcfg: gp_allow_nav_social
+	condition: 'gp-nav-social-enabled:is(on)'
+	label: 'Social links floating'
+	desc: '<p></p>'
+	type: 'select'
+	choices:
+		-
+			value: left
+			label: Left
+		-
+			value: right
+			label: Right
+	std: 'right'
+
+-
+	id: header-search-textblock
+	section: header
+	ifcfg: gp_allow_nav_search
+	label: ""
+	desc: "<h1>Header search</h1><hr />"
+	type: textblock
 	
 -
 	id: gp-nav-search
@@ -86,7 +189,32 @@
 	desc: '<p>Enable or disable header search form</p>'
 	type: 'on-off'
 	std: 'off'
-	
+
+-
+	id: gp-nav-search-float
+	section: header
+	ifcfg: gp_allow_nav_search
+	condition: 'gp-nav-search:is(on)'
+	label: 'Search form floating'
+	desc: ''
+	type: 'select'
+	choices:
+		-
+			value: left
+			label: Left
+		-
+			value: right
+			label: Right
+	std: 'right'
+
+-
+	id: header-language-switcher-textbox
+	section: header
+	ifcfg: gp_allow_nav_language_switcher
+	label: ""
+	desc: "<h1>Header language switcher</h1><p class='desc'>Polylang must be installed for this feature. See Install Plugins section.</p><hr />"
+	type: textblock
+
 -
 	id: gp-nav-language-switcher
 	section: header
@@ -97,12 +225,38 @@
 	std: 'off'
 	
 -
-	id: gp-home-slider
+	id: gp-nav-language-switcher-position
 	section: header
-	label: 'Homepage slider'
-	desc: '<p>Shortcode for homepage slider (MetaSlider or RevSlider). Leave blank for disable.</p>'
-	type: 'text'
-	std: ''
+	ifcfg: gp_allow_nav_language_switcher
+	condition: 'gp-nav-layout:not(simple),gp-nav-language-switcher:is(on)'
+	label: 'Language switcher position'
+	desc: '<p></p>'
+	type: 'select'
+	choices:
+		-
+			value: top
+			label: Top
+		-
+			value: bottom
+			label: Bottom
+	std: 'bottom'
+	
+-
+	id: gp-nav-language-switcher-float
+	section: header
+	ifcfg: gp_allow_nav_language_switcher
+	condition: 'gp-nav-language-switcher:is(on)'
+	label: 'Language switcher floating'
+	desc: ''
+	type: 'select'
+	choices:
+		-
+			value: left
+			label: Left
+		-
+			value: right
+			label: Right
+	std: 'right'
 	
 -
 	id: gp-social-links

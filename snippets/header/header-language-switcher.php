@@ -3,8 +3,20 @@
 
     <?php if(function_exists('pll_the_languages') && 
             function_exists('pll_current_language')) : ?>
+            
+        <?php 
+            $classes = '';
+            if(ot_get_option('gp-nav-language-switcher-float', 'right') == 'left')
+            {
+                $classes .= ' navbar-left';
+            }
+            else 
+            {
+                $classes .= ' navbar-right';
+            }
+        ?>
     
-        <div class="navbar-form navbar-right navbar-language-switcher">
+        <div class="navbar-form navbar-language-switcher <?php echo $classes; ?>">
             <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" 
                         type="button" 

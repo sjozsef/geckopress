@@ -14,6 +14,11 @@ if(ot_get_option('gp-nav-hover-dropdowns', 'off') == 'on')
     }
 }
 
+if(ot_get_option('gp-primary-nav-float', 'left') == 'right')
+{
+    $classes .= ' navbar-right';
+}
+
 wp_nav_menu( array(
     'theme_location' => 'primary',
     'depth'      => 2,

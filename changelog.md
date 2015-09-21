@@ -7,6 +7,7 @@
 - Multiple header templates
 - A new, two row header template
 - SocIcons
+- Added options for navigation elements floating & position
 
 ## 0.3
 
