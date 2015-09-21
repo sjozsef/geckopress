@@ -295,6 +295,27 @@
 				-
 					value: 'github'
 					label: 'GitHub'
+				-
+					value: 'foursquare'
+					label: 'FourSquare'
+				-
+					value: 'feedburner'
+					label: 'FeedBurner'
+				-
+					value: 'soundcloud'
+					label: 'SoundCloud'
+				-
+					value: 'youtube'
+					label: 'YouTube'
+				-
+					value: 'vimeo'
+					label: 'Vimeo'
+				-
+					value: 'instagram'
+					label: 'Instagram'
+				-
+					value: 'wordpress'
+					label: 'WordPress'
 					
 -
 	id: gp-footer-text

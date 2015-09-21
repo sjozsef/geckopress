@@ -4,7 +4,7 @@
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target=
             "#gp-navbar-collapse-1" data-toggle="collapse" type=
-            "button"><span class="sr-only"><?php _e('Toggle navigation'); ?></span>
+            "button"><span class="sr-only"><?php _e('Toggle navigation', 'geckopress'); ?></span>
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span></button>
             <?php get_template_part('snippets/header/header-logo'); ?>
