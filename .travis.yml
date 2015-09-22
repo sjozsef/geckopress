@@ -42,18 +42,6 @@ matrix:
   include:
     - php: 5.6
       env: WP_VERSION=master
-  allow_failures:
-    - php: 5.2
-      env: PHPCS=1 DEFAULT=0
-    
-    - php: 5.3
-      env: PHPCS=1 DEFAULT=0
-    
-    - php: 5.4
-      env: PHPCS=1 DEFAULT=0
-    
-    - php: 5.5
-      env: PHPCS=1 DEFAULT=0
 
   fast_finish: true
 
@@ -114,7 +102,7 @@ script:
   # -n flag: Do not print warnings. (shortcut for --warning-severity=0)
   # --standard: Use WordPress as the standard.
   # --extensions: Only sniff PHP files.
-  - $WP_DEVELOP_DIR/php-codesniffer/scripts/phpcs -p -s -v -n . --ignore=*option-tree/*,*functions/less.php/*,*functions/wp_bootstrap_navwalker.php,*/functions/wp_boostrap_pagination.php,*functions/spyc.php* --standard=WordPress --extensions=php
+  #- $WP_DEVELOP_DIR/php-codesniffer/scripts/phpcs -p -s -v -n . --ignore=*option-tree/*,*functions/less.php/*,*functions/wp_bootstrap_navwalker.php,*/functions/wp_boostrap_pagination.php,*functions/spyc.php* --standard=WordPress --extensions=php
 
 # Receive notifications for build results.
 # @link http://docs.travis-ci.com/user/notifications/#Email-notifications
