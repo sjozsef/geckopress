@@ -1,9 +1,9 @@
-<div id="post-<?php the_ID(); ?>" <?php post_class('blog-item'); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class( 'blog-item' ); ?>>
         
     <?php if ( has_post_thumbnail() ) : ?>
         <div class="post-thumbnail">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail('blog-thumbnail'); ?>
+                <?php the_post_thumbnail( 'blog-thumbnail' ); ?>
             </a>
         </div>
     <?php endif; ?>
@@ -14,12 +14,12 @@
         </a>
     </h2>
     
-    <?php get_template_part('snippets/loops/post-head-meta'); ?>
+    <?php get_template_part( 'snippets/loops/post-head-meta' ); ?>
     
     <div class="post-content">
         <?php the_content(); ?>
     </div>
     
-    <?php get_template_part('snippets/loops/post-foot-meta'); ?>
+    <?php get_template_part( 'snippets/loops/post-foot-meta' ); ?>
     
 </div>

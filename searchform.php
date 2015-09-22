@@ -7,7 +7,6 @@
  * @package GeckoPress
  * @subpackage Main
  * @since 0.1
- *
  */
 
 defined( 'ABSPATH' ) or die( 'Cannot access pages directly.' );
