@@ -1,6 +1,7 @@
 # GeckoPress
 
 [![Project Status](http://stillmaintained.com/sjozsef/geckopress.png)](http://stillmaintained.com/sjozsef/geckopress)
+[![Scrutinizer Code Quality](http://scrutinizer-ci.com/g/sjozsef/geckopress/badges/quality-score.png?b=master)](http://scrutinizer-ci.com/g/sjozsef/geckopress/?branch=master)
 
 GeckoPress is a lightweight but feature rich WordPress theme framework. Basically
 it's a simple theme built on Bootstrap and optimized for child templates.
