@@ -99,7 +99,7 @@
 -
 	id: gp-secondary-nav-float
 	section: header
-	condition: 'gp-nav-layout:not(simple),gp-nav-layout:not(default)'
+	condition: 'gp-nav-layout:not(simple)'
 	label: "Secondary navigation floating"
 	desc: ""
 	type: select
@@ -264,6 +264,36 @@
 			value: right
 			label: Right
 	std: 'right'
+
+-
+	id: gp-nav-language-switcher-text
+	section: header
+	ifcfg: gp_allow_nav_language_switcher
+	condition: 'gp-nav-language-switcher:is(on)'
+	label: 'Language switcher text displaying'
+	desc: 'Set how language names appearing'
+	type: 'radio'
+	choices:
+		- 
+			value: name
+			label: Language full name (e.g. English)
+		-
+			value: slug
+			label: Language slug (e.g. en)
+		-
+			value: none
+			label: Do not display language name or slug (if you want only displaying flags)
+	std: slug
+			
+-
+	id: gp-nav-language-switcher-flag
+	section: header
+	ifcfg: gp_allow_nav_language_switcher
+	condition: 'gp-nav-language-switcher:is(on)'
+	label: 'Displaying flags'
+	desc: 'Enable or disable of displaying flags before language name/slug'
+	type: 'on-off'
+	std: 'on'
 	
 -
 	id: gp-social-links

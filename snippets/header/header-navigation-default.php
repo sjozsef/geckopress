@@ -28,9 +28,9 @@
     <div class="bs-container">
             
             <?php get_template_part( 'snippets/header/header-menu' ); ?>
-            <div class="mobile-secondary-menu">
-                <?php get_template_part( 'snippets/header/header-menu-secondary' ); ?>
-            </div>
+            
+            <?php get_template_part( 'snippets/header/header-menu-secondary' ); ?>
+            
             <?php if ( ot_get_option( 'gp-nav-language-switcher-position', 'top' ) == 'bottom' ) : ?>
                 <?php get_template_part( 'snippets/header/header-language-switcher' ); ?>
             <?php endif; ?>

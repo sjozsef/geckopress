@@ -1,5 +1,4 @@
-<?php if ( ot_get_option( 'gp-nav-language-switcher', 'off' ) == 'on' &&
-	GPConfig::getInstance()->get_cfg( 'gp_allow_nav_language_switcher' ) ) : ?>
+<?php if ( ot_get_option( 'gp-nav-language-switcher', 'off' ) == 'on' ) : ?>
 
     <?php if ( function_exists( 'pll_the_languages' ) &&
 			function_exists( 'pll_current_language' ) ) : ?>
@@ -25,13 +24,13 @@
 
 						$flag = false;
 
-					if ( GPConfig::getInstance()->get_cfg( 'gp_language_switcher_flag' ) ) {
+					if ( ot_get_option( 'gp-nav-language-switcher-flag', 'on' ) == 'on' ) {
 						echo '<span class="gp-ls-flag">' .
 						pll_current_language( 'flag' ) .
 						'</span>';
 						$flag = true;
 					}
-					if ( GPConfig::getInstance()->get_cfg( 'gp_language_switcher_name' ) ) {
+					if ( ot_get_option( 'gp-nav-language-switcher-text', 'slug' ) == 'name' ) {
 						if ( $flag ) {
 							echo '&nbsp;';
 						}
@@ -39,7 +38,7 @@
 						echo '<span class="gp-ls-name">' .
 						pll_current_language( 'name' ) .
 						'</span>';
-					} elseif ( GPConfig::getInstance()->get_cfg( 'gp_language_switcher_slug' ) ) {
+					} elseif ( ot_get_option( 'gp-nav-language-switcher-text', 'slug' ) == 'slug'  ) {
 						if ( $flag ) {
 							echo '&nbsp;';
 						}
@@ -49,7 +48,7 @@
 					}
 
 					?>
-                    <!-- <span class="caret"></span> -->
+
                 </button>
                 
                 <?php
