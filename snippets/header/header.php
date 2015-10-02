@@ -10,6 +10,10 @@
 		case 'simple':
 			get_template_part( 'snippets/header/header-navigation' );
 			break;
+			
+		case 'default':
+			get_template_part( 'snippets/header/header-navigation-default' );
+			break;
 	}
 
 

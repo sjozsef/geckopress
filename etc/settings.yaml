@@ -27,7 +27,7 @@
 	section: header 
 	label: 'Header layout'
 	type: select
-	std: 'top-bar'
+	std: 'default'
 	choices:
 		- 
 			value: 'simple'
@@ -35,6 +35,13 @@
 		-
 			value: 'top-bar'
 			label: 'Top bar navigation'
+		- 
+			value: 'default'
+			label: 'Default'
+		-
+			value: 'big-logo'
+			label: 'Big logo'
+			
 	
 -
 	id: gp-home-slider
@@ -92,7 +99,7 @@
 -
 	id: gp-secondary-nav-float
 	section: header
-	condition: 'gp-nav-layout:not(simple)'
+	condition: 'gp-nav-layout:not(simple),gp-nav-layout:not(default)'
 	label: "Secondary navigation floating"
 	desc: ""
 	type: select

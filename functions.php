@@ -28,4 +28,5 @@ if ( ! is_admin() ) {
 	require_once( TEMPLATEPATH . '/functions/wp_bootstrap_pagination.php' );
 }
 
-?>
+add_theme_support('custom-background');
+

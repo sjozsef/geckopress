@@ -23,7 +23,7 @@ wp_nav_menu( array(
 	'menu_class' => 'nav navbar-nav' . $classes,
 	'fallback_cb' => '',
 	'walker'     => new wp_bootstrap_navwalker(),
-	),
+	)
 );
 
 ?>
