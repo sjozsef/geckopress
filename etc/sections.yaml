@@ -3,6 +3,10 @@
 	title: General
 
 -
+	id: layout
+	title: Layout
+
+-
 	id: header
 	title: Header
 

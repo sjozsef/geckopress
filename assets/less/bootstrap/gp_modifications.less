@@ -63,6 +63,12 @@
 }
 
 @media (max-width: @grid-float-breakpoint-max) {
+	.gp-top-bar .nav.navbar-nav.gp-social-links
+	{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
 	.nav.navbar-nav.gp-social-links li
 	{
 		float: left;
@@ -119,15 +125,15 @@
 
 .gp-top-bar 
 {
-	background-color: @gray-darker;
-	color: @gray-lighter;
+	background-color: @navbar-inverse-bg;
+	color: @navbar-inverse-color;
 }
 
 .gp-top-bar #gp-header-language-switcher,
 .gp-top-bar .nav.navbar-nav > li > a
 {
-	background-color: transparent;
-	color: @gray-light;
+	background-color: @navbar-inverse-bg;
+	color: @navbar-inverse-color;
 	padding: 8px 6px;
 }
 
@@ -136,8 +142,8 @@
 .gp-top-bar #gp-header-language-switcher:active,
 .gp-top-bar .nav.navbar-nav > li > a:active
 {
-	background-color: transparent;
-	color: @gray-lighter;
+	background-color: @navbar-inverse-bg;
+	color: @navbar-inverse-link-hover-color;
 	outline: 0 none;
 }
 
@@ -175,6 +181,50 @@
 	{
 		display: block;
 	}
+}
+
+/** Default layout **/
+
+@media (min-width: @grid-float-breakpoint)
+{
+	.gp-header-default-bottom .navbar-nav > li > a
+	{
+		line-height: @line-height-computed;
+		padding-top: @gp-header-default-bottom-padding-vertical;
+		padding-bottom: @gp-header-default-bottom-padding-vertical;
+	}
+}
+
+.gp-header-default-bottom .navbar-form
+{
+	margin-top: (@gp-header-default-bottom-height - @input-height-base) /2;
+	margin-bottom: (@gp-header-default-bottom-height - @input-height-base) /2;
+}
+
+.navbar.gp-header-default-bottom
+{
+	min-height: @gp-header-default-bottom-height;
+}
+
+/* ======================================
+        Page title
+ ===================================== */
+ 
+.gp-page-title-wrap
+{
+	background-color: @gray-lighter;
+	border-bottom: 1px solid @gray-light;
+	margin-bottom: 24px;
+}
+
+.gp-page-title-wrap h1,
+.gp-page-title-wrap h6
+{
+	margin: 0;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 20px;
+	color: @gray-dark;
 }
 
 /* ======================================
@@ -268,7 +318,7 @@ ul.sub-menu
  
 #fullwidth-container
 {
-    margin: 24px auto;
+    margin: 0 auto;
 }
 
 .page-template-page-builder #fullwidth-container

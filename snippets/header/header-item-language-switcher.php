@@ -52,10 +52,13 @@
                 </button>
                 
                 <?php
+                
+                	
+                
 					$args = array(
 						'echo' => false,
 						'dropdown' => false,
-						'show_flags' => true,
+						'show_flags' => ot_get_option( 'gp-nav-language-switcher-flag', 'on' ) == 'on',
 						'show_names' => true,
 						'hide_if_empty' => false,
 						'raw' => false,

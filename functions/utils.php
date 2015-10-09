@@ -102,4 +102,49 @@ function gp_add_widget_tabs( $tabs ) {
 }
 add_filter( 'siteorigin_panels_widget_dialog_tabs', 'gp_add_widget_tabs', 20 );
 
+/*
+ * Add loop templates to SiteOrigin PageBuilder PostLoop widget
+ */
+function gp_siteorigin_panels_postloop_templates($templates)
+{
+	$gp_templates = array();
+	
+	$template_files = array(
+		'loop*.php',
+		'*/loop*.php',
+		'content*.php',
+		'*/content*.php',
+	);
+
+	$template_dirs = array(get_template_directory() . '/snippets/loops', 
+		get_stylesheet_directory() . 'snippets/loops' );
+	$template_dirs = array_unique($template_dirs);
+	
+	foreach($template_dirs as $dir )
+	{
+		foreach($template_files as $template_file)
+		{
+			foreach((array) glob($dir.'/'.$template_file) as $file)
+			{
+				if( file_exists( $file ) )
+				{
+					$gp_templates[] = str_replace( $dir.'/', 'snippets/loops/', $file );
+				}
+			}
+		}
+	}
+
+	$gp_templates = array_unique($gp_templates);
+	
+	do_action('add_debug_info', $templates);
+	do_action('add_debug_info', $gp_templates);
+		
+	$return = array_merge($templates, $gp_templates);
+	
+	do_action('add_debug_info', $return);
+	
+	return $return;
+}
+add_filter('siteorigin_panels_postloop_templates', 'gp_siteorigin_panels_postloop_templates');
+
 ?>

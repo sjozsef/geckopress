@@ -7,17 +7,17 @@
             "button"><span class="sr-only"><?php _e( 'Toggle navigation', 'geckopress' ); ?></span>
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span></button>
-            <?php get_template_part( 'snippets/header/header-logo' ); ?>
+            <?php get_template_part( 'snippets/header/header-item-logo' ); ?>
         </div>
 
         <div class="collapse navbar-collapse" id=
         "gp-navbar-collapse-1">
             
-            <?php get_template_part( 'snippets/header/header-menu' ); ?>
+            <?php get_template_part( 'snippets/header/header-item-menu-primary' ); ?>
             
-            <?php get_template_part( 'snippets/header/header-social' ); ?>
-            <?php get_template_part( 'snippets/header/header-language-switcher' ); ?>
-            <?php get_template_part( 'snippets/header/header-search' ); ?>
+            <?php get_template_part( 'snippets/header/header-item-social' ); ?>
+            <?php get_template_part( 'snippets/header/header-item-language-switcher' ); ?>
+            <?php get_template_part( 'snippets/header/header-item-search' ); ?>
             
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

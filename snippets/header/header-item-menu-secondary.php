@@ -12,15 +12,15 @@ if ( ot_get_option( 'gp-nav-hover-dropdowns', 'off' ) == 'on' ) {
 	}
 }
 
-if ( ot_get_option( 'gp-primary-nav-float', 'left' ) == 'right' ) {
+if ( ot_get_option( 'gp-secondary-nav-float', 'left' ) == 'right' ) {
 	$classes .= ' navbar-right';
 }
 
 wp_nav_menu( array(
-	'theme_location' => 'primary',
+	'theme_location' => 'secondary',
 	'depth'      => 2,
 	'container'  => false,
-	'menu_class' => 'nav navbar-nav' . $classes,
+	'menu_class' => 'nav navbar-nav gp-nav-secondary' . $classes,
 	'fallback_cb' => '',
 	'walker'     => new wp_bootstrap_navwalker(),
 	)

@@ -9,10 +9,13 @@ function gp_compile_bootstrap() {
 		$files[ TEMPLATEPATH . '/assets/less/bootstrap/bootstrap.less' ] = TEMPLATEPATH . '/assets/less/bootstrap/';
 
 		$options = array();
-		$options_filtered = apply_filters( 'gp_bootstrap_less_options', $options );
+		$options_filtered = apply_filters( 'gp_less_options', $options );
 
-		$variables = array();
-		$variables_filtered = apply_filters( 'gp_bootstrap_less_variables', $variables );
+		$variables = array(
+			'gp-child-path' => '"' . get_stylesheet_directory() . '/assets/less/"',
+			'gp-child-variables' => true
+		);
+		$variables_filtered = apply_filters( 'gp_less_variables', $variables );
 
 		$compiled_file = Less_Cache::Get( $files,
 			$options_filtered,

@@ -7,6 +7,8 @@
 // Core variables and mixins
 @import "variables.less";
 @import "gp_variables.less";
+@import (optional) "@{gp-child-path}theme-variables.less";// when @gp-child-variables(true);
+
 @import "mixins.less";
 
 // Reset and dependencies
@@ -58,3 +60,6 @@
 
 // GeckoPress modifications
 @import "gp_modifications.less";
+
+//Child theme main less file
+@import (optional) "@{gp-child-path}theme-main.less";

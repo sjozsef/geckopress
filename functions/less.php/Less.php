@@ -1981,7 +1981,7 @@ class Less_Parser{
 	}
 
 	private function parseImportOption(){
-		$opt = $this->MatchReg('/\\G(less|css|multiple|once|inline|reference)/');
+		$opt = $this->MatchReg('/\\G(less|css|multiple|once|inline|reference|optional)/');
 		if( $opt ){
 			return $opt[1];
 		}
@@ -5985,7 +5985,12 @@ class Less_Tree_Import extends Less_Tree{
 
 			return array( $contents );
 		}
-
+		
+		// optional (need to be before "CSS" to support optional CSS imports. CSS should be checked only if empty($this->currentFileInfo))
+		if( $this->options['optional'] && !file_exists($full_path) && (!$evald->css || !empty($this->currentFileInfo)))
+		{
+			return array();
+		}
 
 		// css ?
 		if( $evald->css ){

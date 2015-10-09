@@ -1,18 +1,18 @@
 <div id="header">
     <?php
 
-		$nav_layout = ot_get_option( 'gp-nav-layout', 'top-bar' );
+		$nav_layout = ot_get_option( 'gp-nav-layout', 'default' );
 	switch ( $nav_layout ) {
 		case 'top-bar':
-			get_template_part( 'snippets/header/header-navigation-top-bar' );
+			get_template_part( 'snippets/header/header-layout-top-bar' );
 			break;
 
 		case 'simple':
-			get_template_part( 'snippets/header/header-navigation' );
+			get_template_part( 'snippets/header/header-layout-simple' );
 			break;
 			
 		case 'default':
-			get_template_part( 'snippets/header/header-navigation-default' );
+			get_template_part( 'snippets/header/header-layout-default' );
 			break;
 	}
 

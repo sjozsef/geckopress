@@ -23,6 +23,46 @@
 	std: ''
 
 -
+	id: gp-blog-layout
+	section: layout 
+	label: 'Blog layout'
+	type: select
+	std: 'right-sidebar'
+	choices:
+		- 
+			value: 'left-sidebar'
+			label: 'Left sidebar'
+		-
+			value: 'right-sidebar'
+			label: 'Right sidebar'
+		- 
+			value: 'fullwidth'
+			label: 'Fullwidth (no sidebar)'
+
+-
+	id: gp-blog-loop
+#	section: layout 
+	label: 'Blog listing style'
+	type: select
+	std: 'simple'
+	choices:
+		- 
+			value: 'simple'
+			label: 'Simple blog style'
+		-
+			value: 'excerpt'
+			label: 'Excerpt only'
+		- 
+			value: 'excerpt-thumb'
+			label: 'Excerpt and Thumbnail'
+		-
+			value: '2cols'
+			label: 'Two columns'
+		-
+			value: '3cols'
+			label: 'Three columns'
+			
+-
 	id: gp-nav-layout
 	section: header 
 	label: 'Header layout'

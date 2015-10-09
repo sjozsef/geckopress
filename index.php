@@ -15,42 +15,42 @@ get_header();
 
 ?>
 
-<div class="bs-container">
+<?php 
+
+$gp_layout = ot_get_option('gp-blog-layout', 'right-sidebar');
+$gp_layout_snippet = '';
+
+switch($gp_layout)
+{
+    case 'right-sidebar':
+        $gp_layout_snippet='snippets/layouts/layout-sidebar-right-';
+    break;
     
-    <div class="row">
-        
-        <div class="col-md-8">
-            
-            <div id="main-content-wrap">
-            
-                <?php if ( have_posts() ) : ?>
-        
-                    <?php while ( have_posts() ) : the_post(); ?>
-                    
-                        <?php get_template_part( 'snippets/loops/archive', 'blog' ); ?>
-                    
-                    <?php endwhile; ?>
-                
-                <?php endif; ?>
-            
-            </div>
-            
-            <?php wp_bootstrap_pagination(); ?>
-            
-        </div>
-        
-        <div class="col-md-4">
-            
-            <div id="sidebar-left" class="sidebar">
-                
-                <?php dynamic_sidebar( 'sidebar' ); ?>
-                
-            </div>
-            
-        </div>
-        
-    </div>
+    case 'left-sidebar':
+        $gp_layout_snippet='snippets/layouts/layout-sidebar-left-';
+    break;
     
-</div>
+    case 'fullwidth':
+        $gp_layout_snippet='snippets/layouts/layout-fullwidth-';
+    break;
+}
+
+?>
+
+<?php get_template_part($gp_layout_snippet . 'start'); ?>
+            
+<?php if ( have_posts() ) : ?>
+
+    <?php while ( have_posts() ) : the_post(); ?>
+    
+        <?php get_template_part( 'snippets/loops/archive', 'blog' ); ?>
+    
+    <?php endwhile; ?>
+
+<?php endif; ?>
+
+<?php wp_bootstrap_pagination(); ?>
+        
+<?php get_template_part($gp_layout_snippet . 'end'); ?>
 
 <?php get_footer(); ?>

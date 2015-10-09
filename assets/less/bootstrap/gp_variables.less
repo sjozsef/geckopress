@@ -13,7 +13,8 @@
 @font-size-base: 15px;
 @grid-float-breakpoint: @screen-md;
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
-@navbar-height: 80px;
+@navbar-height: 90px;
+@navbar-margin-bottom: 0;
 @navbar-border-radius: 0;
 @navbar-default-color: @gray-dark;
 @navbar-default-bg: #fff;
@@ -26,3 +27,6 @@
 /** ======================================
     GeckoPress variables
 ====================================== **/
+
+@gp-header-default-bottom-height: 60px; // Height of the default header layout bottom navigation
+@gp-header-default-bottom-padding-vertical: ((@gp-header-default-bottom-height - @line-height-computed) / 2);
